@@ -41,17 +41,17 @@ void readLight()
         Particle.publish("Proximity", String(val));
         Particle.publish("Motion", String(val2));
         Particle.publish("Alert", String(val + val2));
-        delay(300000);
+        
     }
     else if(val == 1 && val2 ==0)
     {
         Particle.publish("Possible Package",String(val));
-        delay(300000);
+        
     }
     else if(val == 0 && val2 == 1)
     {
         Particle.publish("Motion Further Away", String(val2));
-        delay(300000);
+        
     }
     
     
@@ -81,7 +81,7 @@ void readLight()
        and no reliable data could be generated! */
     Particle.publish("Sensor overload");
   }
-  delay(60000);
+  delay(300000);
 }
 
 
