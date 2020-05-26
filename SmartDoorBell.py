@@ -85,7 +85,7 @@ if __name__ == '__main__':
                 print(dist)
                 print(motion)
                 if (CameraOn == False):
-                    p1 = sp.Popen(['python3','StreamStart.py'])
+                    p1 = sp.Popen(['python3','Stream.py'])
                     CameraOn = True
                 running = True
                 time.sleep(10)
