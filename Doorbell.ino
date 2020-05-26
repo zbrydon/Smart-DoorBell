@@ -82,6 +82,8 @@ void readLight()
     Particle.publish("Sensor overload");
   }
   delay(300000);
+  val = 0;
+  val2 = 0;
 }
 
 
