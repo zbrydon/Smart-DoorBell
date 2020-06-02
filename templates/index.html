@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Video Streaming </title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <script type=text/javascript> $(function() { $("#hellobutton").click(function (event) 
+    { $.getJSON('/Hello', { },function(data) { }); return false; }); }); </script> 
+
+    <script type=text/javascript> $(function() { $("#goodbyebutton").click(function (event) { $.getJSON('/GoodBye', { },function(data) { }); return false; }); }); </script> 
+
+    <script type=text/javascript> $(function() { $("#comeinbutton").click(function (event) { $.getJSON('/ComeIn', { },function(data) { }); return false; }); }); </script> 
+ 
+    <script type=text/javascript> $(function() { $("#leavepackagebutton").click(function (event) { $.getJSON('/LeavePackage', { },function(data) { }); return false; }); }); </script> 
+
+    <script type=text/javascript> $(function() { $("#goawaybutton").click(function (event) { $.getJSON('/GoAway', { },function(data) { }); return false; }); }); </script> 
+    
+    <script type=text/javascript> $(function() { $("#picturebutton").click(function (event) { $.getJSON('/TakePicture', { },function(data) { }); return false; }); }); </script> 
+    
+  </head>
+  <body>
+    <h1>Smart DoorBell </h1>
+    
+    <img src="{{ url_for('video_feed') }}">
+    <input type = "button" id = "hellobutton" value = "Hello"/>
+    <input type = "button" id = "goodbyebutton" value = "GoodBye"/>
+    <input type = "button" id = "comeinbutton" value = "Come In"/>
+    <input type = "button" id = "leavepackagebutton" value = "Ask to leave the package"/>
+    <input type = "button" id = "goawaybutton" value = "Go Away"/>
+    <input type = "button" id = "picturebutton" value = "Take Picture"/>
+    
+  </body>
+</html>
